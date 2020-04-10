@@ -1,0 +1,61 @@
+h1{background-color: blue; border:5px solid red; font: x-large;}
+h2{color: black;margin: 2px 0px 0px 5px;}
+
+
+header {
+    text-align: left;
+    padding: 10px 0px 15px 0px;
+    background-color: #b51d12;
+    
+    color: white;
+    font-size: 30px;
+}
+#displayinfo{
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    
+}
+.linkAluno{
+    text-decoration: none;
+    color: #f0483c;
+    border: groove;
+    border-color: #f0483c;
+}
+
+
+
+
+
+.mestre{
+    text-align: left;
+    color: black;
+    width: 25%;
+    margin: 15px 0px;
+    padding: 20px;
+
+
+ }
+
+
+#infoacademica{
+    display: flex;display: block;
+ 
+}
+
+.infopessoal{color: black;border-right: 2px solid  #f0483c ;text-align-last: center;}
+
+#xp{text-align: center;}
+
+#links{text-align: center;margin: 20px 0px 20px 0px;}
+
+.mestre:nth-child(1){
+    margin:0px;
+    padding:50px;
+    text-align: left;
+}
+#educacao{align-items: center;
+    display: -webkit-inline-box;
+}
+
+footer{text-align: center;}
