@@ -1,0 +1,81 @@
+h1{background-color: blue; 
+    border:5px solid red; 
+    font: x-large;
+}
+h2{color: black;
+    
+}
+
+header {
+    text-align: left;
+    padding: 10px 0px 15px 50px;
+    background-color: #b51d12;
+    color: white;
+    font-size: 30px;
+}
+#links{
+    padding: 10px 30px 0px 30px;
+    text-align: center;
+
+}
+
+.linkAluno{
+    text-decoration: none;
+    color: #f0483c;
+    border: groove;
+    border-color: #f0483c;
+    
+}
+#displayinfo{
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+       
+}
+.infopessoal{
+    border-right:solid #f0483c  ;
+    margin-right:0px;
+    text-align: left;
+    padding:20px;
+}
+.titulo{
+    font-weight: bold;
+font-size:20px;
+margin:0;
+}
+.texto{
+    margin-top:2px;
+    font-size: 15px;
+}
+
+.display-educacao{
+    display: flex;
+}
+.info-educ{
+    color: black;
+    display: flex;
+    position: absolute;
+    margin: 0px 0px 0px 5px;
+}
+.educacao{
+    text-align: left;
+    width: 25%;
+    padding:20px;
+   
+}
+.xp{
+    align-self: center;
+    margin: 80px 0px 0px 25px;
+    position: absolute;
+}
+.educ{
+    color: black;
+    margin: 0px 0px 0px 25px;
+}
+.titulo1{
+    text-align: left;
+}
+footer{
+    text-align: center;
+}
+

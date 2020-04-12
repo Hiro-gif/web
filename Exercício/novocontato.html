@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/novocontato.css" />
+    <title>Cadastro concluido</title>
+</head>
+
+<body>
+    <h3>Formulario cadastrado com sucesso!</h3>
+   
+    <div class="conjunto">
+        <legend class="legend">Nome:</legend>
+        <p id="nome"></p></br>
+    </div>
+<hr>
+    <div class="conjunto">
+        <legend class="legend">E-mail:</legend>
+        <p id="email"></p></br>
+    </div>
+    <hr>
+
+    <div class="conjunto">
+        <legend class="legend">Telefone:</legend>
+        <p id="telefone"></p></br>
+    </div>
+    <hr>
+
+    <div class="conjunto">
+        <legend class="legend">Prioridade:</legend>
+        <p id="prioridade"></p></br>
+    </div>
+    <hr>
+
+    <div class="conjunto">
+        <legend class="legend">Mensagem:</legend>
+        <p id="mensagem"></p></br>
+    </div>
+    <hr>
+
+    <script>
+        window.onload = function () {
+            let x = window.location.href.split('.html#')[1];
+            x = x.replace(/%22/g, '"').replace(/%20/g, ' ');
+            let json = JSON.parse(x);
+            document.getElementById('nome').innerHTML = json.nome;
+            document.getElementById('email').innerHTML = json.email;
+            document.getElementById('telefone').innerHTML = json.fone;
+            document.getElementById('prioridade').innerHTML = json.prioridade;
+            document.getElementById('mensagem').innerHTML = json.mensagem;
+
+        }
+    </script>
+    <footer>Desenvolvido por Thiago Caron e Gabriel Marcondes &copy;</footer>
+</body>
+
+</html>

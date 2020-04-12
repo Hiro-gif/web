@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    background-color: brown;
+
+}
+.legend{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.conjunto{
+    border: solid black;
+    margin: 30px 250px;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 100px;
+}

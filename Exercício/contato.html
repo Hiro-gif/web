@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/contato.css" />
+</head>
+
+<body>
+    <header>
+        Desenvolvimento Web I
+    </header>
+    <div id="links">
+        <a href="Index.html" class="linkAluno">Index</a>
+        <a href="ThiagoCaron.html" class="linkAluno">Thiago Caron</a>
+        <a href="GabrielMarcondes.html" class="linkAluno">Gabriel Marcondes</a>
+        <a href="#" class="linkAluno">Contato</a>
+    </div>
+    <hr>
+    <div class="form">
+        <h3>Formulario de Contato</h3>
+
+        <legend class="legend">Nome:</legend>
+        <input type="text" name="txtNome" class="answer" placeholder="Digite o nome"></br>
+
+        <legend class="legend">E-mail:</legend>
+        <input type="email" name="txtEmail" class="answer" placeholder="Digite o e-mail"></br>
+
+        <legend class="legend">Telefone:</legend>
+        <input type="text" name="txtfone" class="answer" placeholder="Digite o telefone"></br>
+
+        <legend class="legend">Prioridade:</legend>
+        <select name="prioridade" class="answer" >
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baixa">Baixa</option>
+        </select></br>
+
+        <legend class="legend">Mensagem:</legend>
+        <textarea name="txtMensagem" class="answer" placeholder="Mensagem"> </textarea></br>
+        <input type="submit" value="Enviar!" id="enviar">
+
+    </div>
+    <hr>
+    <footer>Desenvolvido por Thiago Caron e Gabriel Marcondes &copy;</footer>
+
+    <script>
+        document.getElementById("enviar").addEventListener("click", function(ev){
+            let json = {
+                nome: document.getElementsByName("txtNome")[0].value,
+                email: document.getElementsByName("txtEmail")[0].value,
+                fone: document.getElementsByName("txtfone")[0].value,
+                prioridade: document.getElementsByName("prioridade")[0].value,
+                mensagem: document.getElementsByName("txtMensagem")[0].value,
+            };
+            const jsonString = JSON.stringify(json);
+            window.location.href=`novocontato.html#${jsonString}`;
+        });
+    </script>
+</body>
+</html>
